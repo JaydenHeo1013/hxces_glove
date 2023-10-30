@@ -144,26 +144,26 @@ if (ser is not None and ser.isOpen()):
               index = convertSensor(finger_value[3], indexId)
               thumb = convertSensor(finger_value[4], thumbId)
 
-              p.setJointMotorControl2(hand, 7, p.POSITION_CONTROL, pi / 4.)
-              p.setJointMotorControl2(hand, 9, p.POSITION_CONTROL, thumb + pi / 10)
-              p.setJointMotorControl2(hand, 11, p.POSITION_CONTROL, thumb)
-              p.setJointMotorControl2(hand, 13, p.POSITION_CONTROL, thumb)
+              p.setJointMotorControl2(hand, 7, p.POSITION_CONTROL, targetPosition = pi / 4.)
+              p.setJointMotorControl2(hand, 9, p.POSITION_CONTROL, targetPosition = thumb + pi / 10)
+              p.setJointMotorControl2(hand, 11, p.POSITION_CONTROL, targetPosition = thumb)
+              p.setJointMotorControl2(hand, 13, p.POSITION_CONTROL, targetPosition = thumb)
 
-              p.setJointMotorControl2(hand, 17, p.POSITION_CONTROL, index)
-              p.setJointMotorControl2(hand, 19, p.POSITION_CONTROL, index)
-              p.setJointMotorControl2(hand, 21, p.POSITION_CONTROL, index)
+              p.setJointMotorControl2(hand, 17, p.POSITION_CONTROL, targetPosition = index)
+              p.setJointMotorControl2(hand, 19, p.POSITION_CONTROL, targetPosition = index)
+              p.setJointMotorControl2(hand, 21, p.POSITION_CONTROL, targetPosition = index)
 
-              p.setJointMotorControl2(hand, 24, p.POSITION_CONTROL, middle)
-              p.setJointMotorControl2(hand, 26, p.POSITION_CONTROL, middle)
-              p.setJointMotorControl2(hand, 28, p.POSITION_CONTROL, middle)
+              p.setJointMotorControl2(hand, 24, p.POSITION_CONTROL, targetPosition = middle)
+              p.setJointMotorControl2(hand, 26, p.POSITION_CONTROL, targetPosition = middle)
+              p.setJointMotorControl2(hand, 28, p.POSITION_CONTROL, targetPosition = middle)
 
-              p.setJointMotorControl2(hand, 32, p.POSITION_CONTROL, ringpos)
-              p.setJointMotorControl2(hand, 34, p.POSITION_CONTROL, ringpos)
-              p.setJointMotorControl2(hand, 36, p.POSITION_CONTROL, ringpos)
+              p.setJointMotorControl2(hand, 32, p.POSITION_CONTROL, targetPosition = ringpos)
+              p.setJointMotorControl2(hand, 34, p.POSITION_CONTROL, targetPosition = ringpos)
+              p.setJointMotorControl2(hand, 36, p.POSITION_CONTROL, targetPosition = ringpos)
 
-              p.setJointMotorControl2(hand, 40, p.POSITION_CONTROL, pink)
-              p.setJointMotorControl2(hand, 42, p.POSITION_CONTROL, pink)
-              p.setJointMotorControl2(hand, 44, p.POSITION_CONTROL, pink)
+              p.setJointMotorControl2(hand, 40, p.POSITION_CONTROL, targetPosition = pink)
+              p.setJointMotorControl2(hand, 42, p.POSITION_CONTROL, targetPosition = pink)
+              p.setJointMotorControl2(hand, 44, p.POSITION_CONTROL, targetPosition = pink)
 
 
               print(middle)
